@@ -12,6 +12,6 @@ type DevuelvoTweetsSeguidores struct{
 	Tweet struct{
 		Mensaje string             `bson:"mensaje" json:"mensaje,omitempty"`
 		Fecha time.Time            `bson:"fecha" json:"fecha,omitempty"`
-		ID string                  `bson:":id" json:":id,omitempty"`
+		ID string                  `bson:"_id" json:"_id,omitempty"`
 	}
 }
